@@ -1,115 +1,193 @@
 // Variables
-$primary-color: #f7741e;
+$primary-color: #7e3434;
 $secondary-color: #1a1919;
 $text-color: #333;
-$font-stack: 'Helvetica Neue', Arial, sans-serif;
+$font-stack: "Helvetica Neue", Arial, sans-serif;
 
 body {
-    font-family: $font-stack;
-    color: $text-color;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: $font-stack;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 header {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  position: relative;
+  .cta-button {
+    background-color: $primary-color;
     color: #fff;
-    text-align: center;
-    padding: 60px 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 
-    .cta-button {
-        background-color: $primary-color;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: darken($primary-color, 10%);
-        }
+    &:hover {
+      background-color: darken($primary-color, 10%);
     }
+  }
 }
 
 nav {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 10px 0;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: $primary-color;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 
-        li {
-            margin: 0 15px;
+    li {
+      margin: 0 15px;
 
-            a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: bold;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
 
-                &:hover {
-                    color: $primary-color;
-                }
-            }
+        &:hover {
+          color: $primary-color;
         }
+      }
     }
+  }
 }
 
 section {
-    padding: 60px 20px;
+  padding: 60px 20px;
 
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        color: $secondary-color;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: $secondary-color;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #portafolio {
+    background-color: #f7741e;
+
+    img {
+      width: 250px;
     }
+  }
+  #servicios{
+    
+  }
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+  .service-grid,
+  .portfolio-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 
-    .service-grid, .portfolio-grid {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+    .service,
+    .project {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 calc(33.333% - 20px);
+      text-align: center;
 
-        .service, .project {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            flex: 1 1 calc(33.333% - 20px);
-            text-align: center;
+      img {
+        max-width: 100px;
+        margin-bottom: 15px;
+      }
 
-            img {
-                max-width: 100px;
-                margin-bottom: 15px;
-            }
+      .project-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: $primary-color;
+        text-decoration: none;
 
-            .project-link {
-                display: inline-block;
-                margin-top: 10px;
-                color: $primary-color;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
+  }
+}
+/* footer */
+footer {
+  margin: 0;
+  background-color: #e6a71b;
+  color: #3b3b3b;
+  padding: 40px 0;
+  i {
+    color: #343a40;
+  }
+  .contacto-section {
+    a {
+      color: #3b3b3b;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      a {
+        color: #fff;
+      }
+    }
+    span {
+      font-weight: 400;
+    }
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+}
+footer {
+  background-color: $secondary-color;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-footer {
-    background-color: $secondary-color;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.footer-bottom {
+  background-color: #1a1919;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+  align-items: center; /* Centra verticalmente */
+  p {
+    font-size: 1em;
+  }
+  .autor {
+    margin: 0;
+    padding: 0;
+    a {
+      color: #cf9416;
+      text-decoration: none; /* Quita el subrayado del enlace */
+    }
+
+    .custom-icon {
+      display: inline-block; /* Asegura que se comporte como un elemento en línea */
+      width: 24px; /* Ajusta el tamaño según sea necesario */
+      height: 24px; /* Ajusta el tamaño según sea necesario */
+      background-image: url("/public/images/llama-origami.png"); /* Ruta a tu imagen PNG */
+      background-size: cover;
+      background-repeat: no-repeat;
+      vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
+    }
+  }
 }

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origami Desarrollo Web</title>
-    <link rel="stylesheet" href="/src/styles/css/global.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/css/global.css">
+    <link rel="stylesheet" href="/src/styles/css/responsive.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Header -->
     <header id="header">
@@ -15,30 +20,65 @@
             <p>Desarrollo web moderno y eficiente para tu negocio</p>
             <a href="#servicios" class="cta-button">Conoce Más</a>
         </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html#top"><i
+                                    class="bi bi-house-door"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/components/somos.html"><i class="bi bi-people"></i>
+                                Portafolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-list-task"></i> Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/index.html#de-que-se-tratan"><i
+                                            class="bi bi-info-circle"></i>Desarrollo Web</a></li>
+                                <li><a class="dropdown-item" href="/index.html#4-11">Sistema de Gestión</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/index.html#2-3">ERP Odoo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/components/recetarios.html"><i
+                                    class="bi bi-book"></i>
+                                Contacto</a>
+                        </li>                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#footer"><i class="bi bi-geo-alt"></i>
+                                Dónde estamos?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
     <!-- Menu -->
-    <nav id="menu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+   
 
     <!-- Sección Servicios -->
     <section id="servicios">
         <div class="container">
             <h2>Servicios</h2>
             <div class="service-grid">
-                <div class="service">
-                    <img src="path-to-icon.png" alt="Icono Servicio 1">
+                <div class="service card justify-content-center">
+                    <img src="/public/icons/web.png" alt="Icono Servicio 1">
                     <h3>Desarrollo Web</h3>
                     <p>Creación de sitios web personalizados y responsivos.</p>
                 </div>
-                <div class="service">
-                    <img src="path-to-icon.png" alt="Icono Servicio 2">
+                <div class="service card">
+                    <img src="/public/icons/erp.png" alt="Icono Servicio 2">
                     <h3>Odoo ERP</h3>
                     <p>Implementación y personalización de Odoo para tu negocio.</p>
                 </div>
@@ -53,9 +93,16 @@
             <h2>Portafolio</h2>
             <div class="portfolio-grid">
                 <div class="project">
-                    <img src="path-to-image.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
+                    <img class="img-fluid" src="/public/images/1_banner_escsaludable.png" alt="Proyecto 1">
+                    <h3>Escuelita Saludable</h3>
                     <p>Descripción breve del proyecto.</p>
+                    <a href="https://wwww.escuelitasaludable.com.ar" class="project-link">Ver Proyecto</a>
+                </div>
+                <div class="project">
+                    <img class="img-fluid" src="/public/images/1_banner_esc_sjp.png" alt="Proyecto 1">
+                    <h3>Escuelita de Música San Juan Pablo II</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <p class="bg-warning">Implementación de Odoo ERP</p>
                     <a href="link-to-project" class="project-link">Ver Proyecto</a>
                 </div>
                 <!-- Añadir más proyectos según sea necesario -->
@@ -81,11 +128,63 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
+        <!-- seccion de contacto -->
+        <section class="contacto-section">
+            <section class="titulo pb-10 pt-32">
+                <div class="container text-light">
+                    <h4 class="footer-brand"><a href="https://www.instagram.com/escuelitasaludable/" target="_black">
+                            <i class="text-white bi bi-instagram"></i><b> Escuelita</b> Saludable</a>
+                    </h4>
+                </div>
+
+            </section>
+            <div class="container justify-content-between">
+                <!-- Columna de información -->
+                <div class="col-lg-5 ">
+                    <p class="texto-header-foot lead">Talleres dictados por Lic. en Nutrición. Creamos espacios para
+                        acercar
+                        a los niños, niñas y adultos a una alimentación más saludable.
+                    </p>
+                </div>
+                <!-- Columna de dirección -->
+                <div class="col-lg-5 ">
+                    <!-- <div class=" mb-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.1826094128332!2d-60.49446642361289!3d-31.738216211884524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44de2d91127df%3A0xdebc0f73734da038!2zUm9xdWUgU8OhZW56IFBlw7FhIDE1NTYsIEUzMTAwIFBhcmFuw6EsIEVudHJlIFLDrW9z!5e0!3m2!1ses-419!2sar!4v1723034645505!5m2!1ses-419!2sar"
+                            width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> -->
+                    <p class="lead">Paraná, Entre Ríos</p>
+                    <p class="lead"><a href="mailto:escuelitasaludableparana@gmail.com"><i class="bi bi-envelope"></i>
+                            origamidesarrollo@gmail.com</a></p>
+                </div>
+
+            </div>
+        </section>
+
         <p>&copy; 2024 Origami Desarrollo Web. Todos los derechos reservados.</p>
     </footer>
+    <!-- copyright y autor -->
+    <div class="footer-bottom">
+        <div class="container d-flex justify-content-between g-1">
+            <!-- <p class="m-0">Copyright &copy; Escuelita Saludable | <span class="flag-icon flag-icon-ar"></span> Español
+                (AR)</p> -->
+            <p class="autor">Creado por <a
+                    href="https://api.whatsapp.com/send/?phone=5493434387478&type=phone_number&app_absent=0"><i
+                        class="custom-icon"></i> Origami</a></p>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

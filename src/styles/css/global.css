@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #333;
@@ -10,10 +11,11 @@ header {
   background-color: #1a1919;
   color: #fff;
   text-align: center;
-  padding: 60px 20px;
+  padding-top: 60px;
+  position: relative;
 }
 header .cta-button {
-  background-color: #f7741e;
+  background-color: #7e3434;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -21,14 +23,16 @@ header .cta-button {
   transition: background-color 0.3s ease;
 }
 header .cta-button:hover {
-  background-color: #da5b08;
+  background-color: #5a2525;
 }
 
 nav {
-  position: fixed;
+  position: sticky;
+  top: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #7e3434;
   text-align: center;
+  margin-top: 30px;
   padding: 10px 0;
 }
 nav ul {
@@ -47,7 +51,7 @@ nav ul li a {
   font-weight: bold;
 }
 nav ul li a:hover {
-  color: #f7741e;
+  color: #7e3434;
 }
 
 section {
@@ -62,30 +66,82 @@ section .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-section .service-grid, section .portfolio-grid {
+section #portafolio {
+  background-color: #f7741e;
+}
+section #portafolio img {
+  width: 250px;
+}
+section .service-grid,
+section .portfolio-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-section .service-grid .service, section .service-grid .project, section .portfolio-grid .service, section .portfolio-grid .project {
+section .service-grid .service,
+section .service-grid .project,
+section .portfolio-grid .service,
+section .portfolio-grid .project {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 calc(33.333% - 20px);
   text-align: center;
 }
-section .service-grid .service img, section .service-grid .project img, section .portfolio-grid .service img, section .portfolio-grid .project img {
+section .service-grid .service img,
+section .service-grid .project img,
+section .portfolio-grid .service img,
+section .portfolio-grid .project img {
   max-width: 100px;
   margin-bottom: 15px;
 }
-section .service-grid .service .project-link, section .service-grid .project .project-link, section .portfolio-grid .service .project-link, section .portfolio-grid .project .project-link {
+section .service-grid .service .project-link,
+section .service-grid .project .project-link,
+section .portfolio-grid .service .project-link,
+section .portfolio-grid .project .project-link {
   display: inline-block;
   margin-top: 10px;
-  color: #f7741e;
+  color: #7e3434;
   text-decoration: none;
 }
-section .service-grid .service .project-link:hover, section .service-grid .project .project-link:hover, section .portfolio-grid .service .project-link:hover, section .portfolio-grid .project .project-link:hover {
+section .service-grid .service .project-link:hover,
+section .service-grid .project .project-link:hover,
+section .portfolio-grid .service .project-link:hover,
+section .portfolio-grid .project .project-link:hover {
   text-decoration: underline;
+}
+
+/* footer */
+footer {
+  margin: 0;
+  background-color: #e6a71b;
+  color: #3b3b3b;
+  padding: 40px 0;
+}
+footer i {
+  color: #343a40;
+}
+footer .contacto-section a {
+  color: #3b3b3b;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+footer .container .footer-brand a {
+  color: #fff;
+}
+footer .container span {
+  font-weight: 400;
+}
+footer .container p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 footer {
@@ -93,6 +149,35 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+
+.footer-bottom {
+  background-color: #1a1919;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+  align-items: center; /* Centra verticalmente */
+}
+.footer-bottom p {
+  font-size: 1em;
+}
+.footer-bottom .autor {
+  margin: 0;
+  padding: 0;
+}
+.footer-bottom .autor a {
+  color: #cf9416;
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+.footer-bottom .autor .custom-icon {
+  display: inline-block; /* Asegura que se comporte como un elemento en línea */
+  width: 24px; /* Ajusta el tamaño según sea necesario */
+  height: 24px; /* Ajusta el tamaño según sea necesario */
+  background-image: url("/public/images/llama-origami.png"); /* Ruta a tu imagen PNG */
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
 }
 
 /*# sourceMappingURL=global.css.map */
