@@ -7,11 +7,21 @@ body {
   line-height: 1.6;
 }
 
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 500;
+}
+
 header {
   background-color: #1a1919;
   color: #fff;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
 }
 header .cta-button {
@@ -28,30 +38,48 @@ header .cta-button:hover {
 
 nav {
   position: sticky;
-  top: 0px;
+  top: 0.1px;
   width: 100%;
   background-color: #7e3434;
   text-align: center;
-  margin-top: 30px;
   padding: 10px 0;
+  /* ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  } */
 }
-nav ul {
-  list-style: none;
-  margin: 0;
+nav .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+nav .navbar-nav .nav-item .dropdown-menu {
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
-nav ul li {
-  margin: 0 15px;
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  padding: 10px 15px;
 }
-nav ul li a {
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #7e3434;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
 }
-nav ul li a:hover {
-  color: #7e3434;
+nav .navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
 }
 
 section {
@@ -66,12 +94,6 @@ section .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-section #portafolio {
-  background-color: #f7741e;
-}
-section #portafolio img {
-  width: 250px;
-}
 section .service-grid,
 section .portfolio-grid {
   display: flex;
@@ -83,7 +105,7 @@ section .service-grid .project,
 section .portfolio-grid .service,
 section .portfolio-grid .project {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 8px;
   flex: 1 1 calc(33.333% - 20px);
   text-align: center;
@@ -101,16 +123,37 @@ section .portfolio-grid .service .project-link,
 section .portfolio-grid .project .project-link {
   display: inline-block;
   margin-top: 10px;
-  color: #7e3434;
+  color: #fff;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgba(26, 25, 25, 0.3843137255);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 section .service-grid .service .project-link:hover,
 section .service-grid .project .project-link:hover,
 section .portfolio-grid .service .project-link:hover,
 section .portfolio-grid .project .project-link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #d68910;
+  background-color: #1a1919;
+  transition: 0.4s all;
+}
+section .service-grid .service .project-link i,
+section .service-grid .project .project-link i,
+section .portfolio-grid .service .project-link i,
+section .portfolio-grid .project .project-link i {
+  font-size: 19px;
 }
 
+#portafolio {
+  background-color: #d68910;
+  padding: 30px 0;
+}
+#portafolio img {
+  width: 250px;
+}
 /* footer */
 footer {
   margin: 0;

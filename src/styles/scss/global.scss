@@ -1,6 +1,8 @@
 // Variables
 $primary-color: #7e3434;
 $secondary-color: #1a1919;
+$secondary-color-opac:#1a191962;
+$tercetary-color: #d68910;
 $text-color: #333;
 $font-stack: "Helvetica Neue", Arial, sans-serif;
 
@@ -12,11 +14,20 @@ body {
   line-height: 1.6;
 }
 
+p{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.bold{
+  font-weight: 500;
+}
+
 header {
   background-color: $secondary-color;
   color: #fff;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
   .cta-button {
     background-color: $primary-color;
@@ -33,15 +44,34 @@ header {
 }
 
 nav {
-  position: sticky;
-  top: 0px;
+  position:sticky;
+  top: .1px;
   width: 100%;
   background-color: $primary-color;
-  text-align: center;
-  margin-top: 30px;
+  text-align: center;  
   padding: 10px 0;
 
-  ul {
+  .navbar-nav{
+
+    .nav-item{
+      margin: 0 10px;
+
+      .dropdown-menu{
+        padding: 0;
+        .dropdown-item{
+          padding: 10px 15px;
+          &:hover{
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+      .nav-link{
+        font-size: 1rem;
+      }
+    }
+  }
+  /* ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -61,7 +91,7 @@ nav {
         }
       }
     }
-  }
+  } */
 }
 
 section {
@@ -76,17 +106,7 @@ section {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  #portafolio {
-    background-color: #f7741e;
-
-    img {
-      width: 250px;
-    }
-  }
-  #servicios{
-    
-  }
+  }  
 
   .service-grid,
   .portfolio-grid {
@@ -97,7 +117,7 @@ section {
     .service,
     .project {
       background-color: #f9f9f9;
-      padding: 20px;
+      padding: 30px 20px;
       border-radius: 8px;
       flex: 1 1 calc(33.333% - 20px);
       text-align: center;
@@ -110,15 +130,40 @@ section {
       .project-link {
         display: inline-block;
         margin-top: 10px;
-        color: $primary-color;
+        color: #fff;
         text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $secondary-color-opac;        
+        padding: 10px 20px;
+        border-radius: 10px;        
 
         &:hover {
-          text-decoration: underline;
+          /* text-decoration: underline; */
+          color: $tercetary-color;
+          background-color: $secondary-color;
+          transition: .4s all;          
+        }
+        i{
+          font-size: 19px;
         }
       }
     }
   }
+}
+#portafolio {
+  background-color: $tercetary-color;
+  padding: 30px 0;
+  img {
+    width: 250px;
+  }
+
+  .project-link{
+
+  }
+}
+#servicios{
+  
 }
 /* footer */
 footer {
