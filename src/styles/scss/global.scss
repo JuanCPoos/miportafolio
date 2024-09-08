@@ -1,10 +1,10 @@
 // Variables
 $primary-color: #7e3434;
 $secondary-color: #1a1919;
-$secondary-color-opac:#1a191962;
+$secondary-color-opac: #1a191962;
 $tercetary-color: #d68910;
 $text-color: #333;
-$font-stack: "Helvetica Neue", Arial, sans-serif;
+$font-stack: "mestiza-sans", sans-serif;
 
 body {
   font-family: $font-stack;
@@ -14,11 +14,13 @@ body {
   line-height: 1.6;
 }
 
-p{
+/* estilo lead de bootstrap */
+p {
   font-size: 1.25rem;
   font-weight: 300;
 }
-.bold{
+
+.bold {
   font-weight: 500;
 }
 
@@ -44,29 +46,28 @@ header {
 }
 
 nav {
-  position:sticky;
-  top: .1px;
+  position: sticky;
+  top: 0.1px;
   width: 100%;
   background-color: $primary-color;
-  text-align: center;  
+  text-align: center;
   padding: 10px 0;
 
-  .navbar-nav{
-
-    .nav-item{
+  .navbar-nav {
+    .nav-item {
       margin: 0 10px;
 
-      .dropdown-menu{
+      .dropdown-menu {
         padding: 0;
-        .dropdown-item{
+        .dropdown-item {
           padding: 10px 15px;
-          &:hover{
+          &:hover {
             background-color: $primary-color;
             color: #fff;
           }
         }
       }
-      .nav-link{
+      .nav-link {
         font-size: 1rem;
       }
     }
@@ -106,7 +107,7 @@ section {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-  }  
+  }
 
   .service-grid,
   .portfolio-grid {
@@ -116,15 +117,28 @@ section {
 
     .service,
     .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       background-color: #f9f9f9;
       padding: 30px 20px;
       border-radius: 8px;
       flex: 1 1 calc(33.333% - 20px);
       text-align: center;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 
-      img {
-        max-width: 100px;
+      .img_project {
+        max-width: 90%;
         margin-bottom: 15px;
+      }
+
+      h3 {
+        font-family: "mestiza-sans";
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.05rem;
       }
 
       .project-link {
@@ -134,17 +148,17 @@ section {
         text-decoration: none;
         font-size: 16px;
         font-weight: 500;
-        background-color: $secondary-color-opac;        
+        background-color: $secondary-color-opac;
         padding: 10px 20px;
-        border-radius: 10px;        
+        border-radius: 10px;
 
         &:hover {
           /* text-decoration: underline; */
           color: $tercetary-color;
           background-color: $secondary-color;
-          transition: .4s all;          
+          transition: 0.4s all;
         }
-        i{
+        i {
           font-size: 19px;
         }
       }
@@ -152,31 +166,39 @@ section {
   }
 }
 #portafolio {
-  background-color: $tercetary-color;
-  padding: 30px 0;
+  background-color: rgb(230, 230, 230);
+  padding-top: 5em;
+  padding-bottom: 5em;
   img {
     width: 250px;
   }
 
-  .project-link{
-
+  .project-link {
   }
 }
-#servicios{
-  
+#servicios {
 }
 /* footer */
-footer {
+#footer {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  background-color: #e6a71b;
+  background-color: #333333;
   color: #3b3b3b;
-  padding: 40px 0;
+  padding: 50px;
   i {
-    color: #343a40;
+    color: #696969;
   }
-  .contacto-section {
-    a {
-      color: #3b3b3b;
+  .contact-section {
+    padding: 0;
+    .footer-brand {
+    margin: 1em 0;
+    }
+    a,
+    p,
+    h4 {
+      color: #696969;
+      text-decoration: none;
     }
   }
   .container {
