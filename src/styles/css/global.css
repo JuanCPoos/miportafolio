@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* estilo lead de bootstrap */
@@ -18,26 +21,29 @@ p {
 }
 
 #header {
-  /* background-color: $secondary-color; */
-  color: #fff;
+  background-color: #fff;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  position: relative;
+  margin-bottom: 60px;
 }
 #header .background_header {
-  background-image: url("../../../public/images/background.bmp");
+  background-image: url("/public/images/5169603.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  /* padding: 3em; */
 }
 #header .front_header {
-  background-color: #1a1919;
-  z-index: 1;
+  background-color: rgba(26, 25, 25, 0.3843137255);
+  display: block;
+  color: #e7e7e7;
+}
+#header .front_header p {
+  font-size: 15px;
 }
 #header .front_header .cta-button {
-  background-color: #7e3434;
-  color: #fff;
-  margin-top: 5em;
+  background-color: rgba(26, 25, 25, 0.3843137255);
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -46,10 +52,14 @@ p {
 #header .front_header .cta-button:hover {
   background-color: #5a2525;
 }
+#header .front_header .cta-button a {
+  text-decoration: none;
+  color: #fff;
+}
 
 nav {
   width: 100%;
-  background-color: #7e3434;
+  background-color: #333;
   text-align: center;
   padding: 10px 0;
   /* ul {
@@ -73,6 +83,13 @@ nav {
       }
     }
   } */
+}
+nav .navbar-toggler {
+  border: none;
+  color: #fff;
+}
+nav .navbar-toggler .navbar-toggler-icon {
+  color: #fff;
 }
 nav .navbar-nav .nav-item {
   margin: 0 10px;
@@ -150,11 +167,11 @@ section .portfolio-grid .service .project-link,
 section .portfolio-grid .project .project-link {
   display: inline-block;
   margin-top: 10px;
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  background-color: rgba(26, 25, 25, 0.3843137255);
+  background-color: #d68910;
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -175,13 +192,21 @@ section .portfolio-grid .project .project-link i {
 }
 
 #portafolio {
-  background-color: rgb(230, 230, 230);
+  background-color: #333;
   padding-top: 5em;
   padding-bottom: 5em;
+}
+#portafolio h2 {
+  color: #d68910;
+  font-family: "mestiza-sans", sans-serif;
 }
 #portafolio img {
   width: 250px;
 }
+#portafolio .project-link {
+  display: inline-block;
+}
+
 #servicios img {
   width: 100px;
 }
@@ -231,6 +256,7 @@ section .portfolio-grid .project .project-link i {
 }
 
 footer {
+  margin-top: auto;
   background-color: #1a1919;
   color: #fff;
   text-align: center;
