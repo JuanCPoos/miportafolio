@@ -27,18 +27,18 @@ p {
 .bold {
   font-weight: 500;
 }
-
+.background_header{
+  background-image: url("/public/images/5169603.jpg");
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  /* padding: 3em; */
+}
 #header {
   background-color: #fff;  
   text-align: center;  
   margin-bottom: 60px;
-  .background_header{
-    background-image: url("/public/images/5169603.jpg");
-    background-size:cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-    /* padding: 3em; */
-  }
+
   .front_header{
     background-color: $secondary-color-opac;
     display: block;
@@ -98,27 +98,6 @@ nav {
       }
     }
   }
-  /* ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-
-    li {
-      margin: 0 15px;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-
-        &:hover {
-          color: $primary-color;
-        }
-      }
-    }
-  } */
 }
 
 section {
@@ -212,6 +191,9 @@ section {
   img {
     width: 100px;
   }
+}
+#contacto{
+  
 }
 /* footer */
 #footer {

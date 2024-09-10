@@ -20,17 +20,18 @@ p {
   font-weight: 500;
 }
 
-#header {
-  background-color: #fff;
-  text-align: center;
-  margin-bottom: 60px;
-}
-#header .background_header {
+.background_header {
   background-image: url("/public/images/5169603.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* padding: 3em; */
+}
+
+#header {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
 }
 #header .front_header {
   background-color: rgba(26, 25, 25, 0.3843137255);
@@ -62,27 +63,6 @@ nav {
   background-color: #333;
   text-align: center;
   padding: 10px 0;
-  /* ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-
-    li {
-      margin: 0 15px;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-
-        &:hover {
-          color: $primary-color;
-        }
-      }
-    }
-  } */
 }
 nav .navbar-toggler {
   border: none;
