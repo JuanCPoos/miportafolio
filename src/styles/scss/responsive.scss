@@ -10,7 +10,18 @@
   section{
     padding: 30px 10px;
   }
- 
+  body{
+    .front_header{
+      display: flex;
+      flex-direction: column;
+    }
+    h1{
+      font-size: 3em;
+    }
+    
+  }
+
+  
   
 
 }

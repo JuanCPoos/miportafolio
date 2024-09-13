@@ -78,10 +78,8 @@ p {
 
 nav {
   width: 100%;
-  background-color: #fff;
+  background-color: $cuartery-color; 
   text-align: center;
-  
-
   .navbar{
     padding: 0;
     margin: 0;
@@ -109,13 +107,12 @@ nav {
       }
       .nav-link {
         font-size: 1rem;
+        color: rgb(182, 182, 182);
         &:hover{
           color: #fff;
+          transition: .3s all ease-in-out;
+          font-weight: 600;
         }
-      }
-      &:hover{        
-        background-color: $cuartery-color;
-        transition: .3s ease-in-out;
       }
     }
     
@@ -130,8 +127,7 @@ section {
   h2 {
     text-align: center;
     margin-bottom: 40px;
-    /* color: $cuartery-color; */
-    color: #fff;
+    color: $cuartery-color;    
     font-size: 4em;
   }
 
@@ -239,7 +235,8 @@ section {
   }
 }
 #servicios {
-  background-color: $cuartery-color;
+  
+  background-color: #fff;
   .front {
     .row {
       display: flex;
