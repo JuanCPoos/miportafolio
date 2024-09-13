@@ -9,10 +9,20 @@ body {
   display: flex;
   flex-direction: column;
 }
+body h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2,
+h2,
+h4 {
+  font-family: "mestiza-sans", sans-serif;
+}
 
 /* estilo lead de bootstrap */
 p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -37,9 +47,10 @@ p {
   background-color: rgba(26, 25, 25, 0.3843137255);
   display: block;
   color: #e7e7e7;
+  padding: 5em 0;
 }
 #header .front_header p {
-  font-size: 15px;
+  font-size: 2rem;
 }
 #header .front_header .cta-button {
   background-color: rgba(26, 25, 25, 0.3843137255);
@@ -94,7 +105,7 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: #1a1919;
+  color: #d68910;
 }
 section .container {
   max-width: 1200px;
@@ -172,13 +183,16 @@ section .portfolio-grid .project .project-link i {
 }
 
 #portafolio {
-  background-color: #333;
+  background-color: #f5f5f5;
   padding-top: 5em;
   padding-bottom: 5em;
 }
 #portafolio h2 {
   color: #d68910;
   font-family: "mestiza-sans", sans-serif;
+}
+#portafolio h3 {
+  margin: 1em 0;
 }
 #portafolio img {
   width: 250px;
@@ -187,8 +201,33 @@ section .portfolio-grid .project .project-link i {
   display: inline-block;
 }
 
+#servicios h2 {
+  font-size: "mestiza-sans", sans-serif;
+}
 #servicios img {
   width: 100px;
+}
+
+#contacto .contenedor_contacto {
+  background-color: rgba(26, 25, 25, 0.3843137255);
+  border-radius: 10px;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contacto .contenedor_contacto form {
+  justify-content: center;
+}
+#contacto .contenedor_contacto form .grupo_input {
+  display: inline;
+  padding: 1em;
+}
+#contacto .contenedor_contacto form .grupo_input input {
+  width: 100%;
+}
+#contacto .contenedor_contacto form textarea {
+  width: 100%;
 }
 
 /* footer */
@@ -199,9 +238,6 @@ section .portfolio-grid .project .project-link i {
   background-color: #333333;
   color: #3b3b3b;
   padding: 50px;
-}
-#footer i {
-  color: #696969;
 }
 #footer .contact-section {
   padding: 0;
@@ -228,7 +264,7 @@ section .portfolio-grid .project .project-link i {
   color: #fff;
 }
 #footer .container span {
-  font-weight: 400;
+  font-size: 30px;
 }
 #footer .container p {
   margin: 0;

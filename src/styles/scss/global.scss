@@ -16,38 +16,48 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  h1{
+    font-size: 4rem;
+  }
 }
 
+h1,
+h2,
+h2,
+h4 {
+  font-family: "mestiza-sans", sans-serif;
+}
 /* estilo lead de bootstrap */
 p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 .bold {
   font-weight: 500;
 }
-.background_header{
+.background_header {
   background-image: url("/public/images/5169603.jpg");
-  background-size:cover;
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   /* padding: 3em; */
 }
 #header {
-  background-color: #fff;  
-  text-align: center;  
+  background-color: #fff;
+  text-align: center;
   margin-bottom: 60px;
 
-  .front_header{
+  .front_header {
     background-color: $secondary-color-opac;
     display: block;
-    color: $text-color-alternative;    
-    p{
-      font-size: 15px;
+    color: $text-color-alternative;
+    padding: 5em 0;
+    p {
+      font-size: 2rem;
     }
     .cta-button {
-      background-color: $secondary-color-opac;      
+      background-color: $secondary-color-opac;
       margin-top: 1em;
       margin-bottom: 1em;
       padding: 10px 20px;
@@ -57,25 +67,24 @@ p {
       &:hover {
         background-color: darken($primary-color, 10%);
       }
-      a{
+      a {
         text-decoration: none;
         color: #fff;
       }
     }
   }
-  
 }
 
-nav { 
+nav {
   width: 100%;
   background-color: #333;
   text-align: center;
   padding: 10px 0;
 
-  .navbar-toggler{    
+  .navbar-toggler {
     border: none;
     color: #fff;
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
       color: #fff;
     }
   }
@@ -106,7 +115,7 @@ section {
   h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: $secondary-color;
+    color: $tercetary-color;
   }
 
   .container {
@@ -126,7 +135,7 @@ section {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      background-color: #f9f9f9;      
+      background-color: #f9f9f9;
       padding: 30px 20px;
       border-radius: 8px;
       flex: 1 1 calc(33.333% - 20px);
@@ -171,12 +180,15 @@ section {
   }
 }
 #portafolio {
-  background-color:#333;
+  background-color: #f5f5f5;
   padding-top: 5em;
   padding-bottom: 5em;
-  h2{
+  h2 {
     color: $tercetary-color;
-    font-family: 'mestiza-sans', sans-serif;
+    font-family: "mestiza-sans", sans-serif;
+  }
+  h3 {
+    margin: 1em 0;
   }
   img {
     width: 250px;
@@ -184,16 +196,38 @@ section {
 
   .project-link {
     display: inline-block;
-    
   }
 }
 #servicios {
+  h2 {
+    font-size: "mestiza-sans", sans-serif;
+  }
   img {
     width: 100px;
   }
 }
-#contacto{
-  
+#contacto {
+  .contenedor_contacto {
+    background-color: $secondary-color-opac;
+    border-radius: 10px;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form {
+      .grupo_input {
+        display: inline;
+        padding: 1em;
+        input {
+          width: 100%;
+        }
+      }
+      textarea {
+        width: 100%;
+      }
+      justify-content: center;
+    }
+  }
 }
 /* footer */
 #footer {
@@ -203,9 +237,7 @@ section {
   background-color: #333333;
   color: #3b3b3b;
   padding: 50px;
-  i {
-    color: #696969;
-  }
+ 
   .contact-section {
     padding: 0;
     .footer-brand {
@@ -231,7 +263,7 @@ section {
       }
     }
     span {
-      font-weight: 400;
+      font-size: 30px
     }
     p {
       margin: 0;

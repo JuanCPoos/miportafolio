@@ -39,34 +39,34 @@
                                         class="bi bi-house-door"></i> Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="text-light nav-link" href="/components/somos.html"><i
+                                <a class="text-light nav-link" href="#portafolio"><i
                                         class="bi bi-camera"></i>
                                     Portafolio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="text-light nav-link dropdown-toggle" href="#" role="button"
+                                <a class="text-light nav-link dropdown-toggle" href="#servicios" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-list-task"></i> Servicios
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item nav-link" href="/index.html#de-que-se-tratan"><i
+                                    <li><a class="dropdown-item nav-link" href="#desarrolloweb"><i
                                                 class="bi bi-info-circle"></i>Desarrollo Web</a></li>
-                                    <li><a class="dropdown-item nav-link" href="/index.html#2-3">Wordpress</a></li>
-                                    <li><a class="dropdown-item nav-link" href="/index.html#4-11">Sistema de Gestión</a>
+                                    <li><a class="dropdown-item nav-link" href="#">Wordpress</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#gestion">Sistema de Gestión</a>
                                     </li>
                                     <li><a class="dropdown-item nav-link" href="/index.html#2-3">ERP Odoo</a></li>
 
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="text-light nav-link" href="/components/recetarios.html"><i
+                                <a class="text-light nav-link" href="#footer"><i
                                         class="bi bi-book"></i>
                                     Contacto</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="text-light nav-link" href="/index.html#footer"><i class="bi bi-geo-alt"></i>
                                     Dónde estamos?</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -84,14 +84,14 @@
         </div>
     </header>
 
-
-    <!-- Sección Servicios -->
+    <main>
+         <!-- Sección Servicios -->
     <section id="servicios">
         <div class="container">
             <h2>Servicios</h2>
             <div class="service-grid">
-                <div class="service card justify-content-center">
-                    <img src="/public/icons/web.png" alt="Icono Servicio 1">
+                <div class="service card justify-content-center" id="desarrolloweb">
+                    <img src="/public/icons/animated/web.gif" alt="Icono Servicio 1">
                     <h3 class="my-3">Desarrollo Web</h3>
                     <p>Creación de sitios web personalizados y responsivos.</p>
                     <p><i class="bi bi-wordpress"></i> Wordpress</p>
@@ -100,8 +100,8 @@
                     <p><i class="bi bi-filetype-js"></i> Javascript</p>
                     <p><i class="bi bi-bootstrap"></i> Bootstrap, Ionic</p>
                 </div>
-                <div class="service card">
-                    <img src="/public/icons/erp.png" alt="Icono Servicio 2">
+                <div class="service card" id="gestion">
+                    <img src="/public/icons/animated/web-developer.gif" alt="Icono Servicio 2">
                     <h3 class="my-3">Implementación Odoo ERP</h3>
                     <p>Implementación y personalización de Odoo para tu negocio.</p>
                     <p><i class="bi bi-receipt"></i> Ventas</p>
@@ -120,7 +120,7 @@
         <div class="container">
             <h2>Portafolio</h2>
             <div class="portfolio-grid">
-                <div class="project">
+                <div class="project card">
                     <img class="img-project img-fluid" src="public/images/1_banner_escsaludable.png" alt="Proyecto 1">
                     <h3>Escuelita Saludable</h3>
                     <p>Sitio web para profesionales de la Nutrición que buscan enseñar y acompañar a las familias y
@@ -128,7 +128,7 @@
                     <a href="https://wwww.escuelitasaludable.com.ar" class="project-link">Ver Proyecto <i
                             class="bi bi-box-arrow-in-right"></i></a>
                 </div>
-                <div class="project">
+                <div class="project card">
                     <img class="img-project img-fluid" src="public/images/1_banner_esc_sjp.png" alt="Proyecto 1">
                     <h3>Escuelita de Música San Juan Pablo II</h3>
                     <p>Sistema de Gestión en Odoo v15.0 + sitio web para gestionar alumnos, talleres y cuotas de los
@@ -138,57 +138,52 @@
                     <a href="https://www.escuelitademusicasjp2.com.ar" class="project-link"></i>Ver Proyecto <i
                             class="bi bi-box-arrow-in-right"></i></a>
                 </div>
-                <div class="project">
+                <div class="project card">
                     <img class="img-project img-fluid" src="public/images/1-verduleria.png" alt="Proyecto 1">
                     <h3>Sitio Web de Verduleria</h3>
                     <p>Proyecto para mostrar una verdulería, primera etapa</p>
                     <a href="https://juancpoos.github.io/verduleria.github.io/" class="project-link"></i>Ver Proyecto <i
                             class="bi bi-box-arrow-in-right"></i></a>
                 </div>
+                <!--  <div class="project">
+                    <img class="img-project img-fluid" src="public/images/1-verduleria.png" alt="Proyecto 1">
+                    <h3>Nacar</h3>
+                    <p>Comercialización de insumos para el armado de bijouterie y accesorios de moda</p>
+                    <p class="bold">Con implementeación Odoo ERP</p>
+                    <a href="https://nacaraccesorios.com.ar/shop" class="project-link"></i>Ver Proyecto <i
+                            class="bi bi-box-arrow-in-right"></i></a>
+                </div>    -->
                 <!-- Añadir más proyectos según sea necesario -->
             </div>
         </div>
     </section>
 
     <!-- Sección Contacto -->
-    <section id="contacto" class="background_header">
-        <!-- validación de contacto de bootstrap -->
-        <div class="front-header">
-            <div class=" container">
-                <h2>Contáctanos</h2>
-                <form id="contact-form" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="nombre" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingresa tu nombre.
-                                </div>
+    <!-- <section id="contacto" class="background_header">
+        <div class="contenedor_contacto">
+            <div class="container justify-content-center">
+                <h2 class="text-white">Contacto</h2>
+                <form action="submit-form.php" method="post">
+                    <div class="grupo_input">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" placeholder="Tu Email" required>
                             </div>
                         </div>
                     </div>
-                </form>
+                    <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                    <button class="my-3" type="submit">Enviar</button>
+                </form>               
             </div>
         </div>
 
+    </section> -->
 
-
-
-        <div class="container">
-            <h2>Contacto</h2>
-            <form action="submit-form.php" method="post">
-                <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Email" required>
-                <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="social-links">
-                <a href="https://www.instagram.com/tu-cuenta" target="_blank">Instagram</a>
-                <!-- Añadir más enlaces sociales si es necesario -->
-            </div>
-        </div>
-    </section>
-
+    </main>
+   
     <!-- Footer -->
     <footer id="footer">
         <!-- seccion de contacto -->

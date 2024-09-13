@@ -3,6 +3,12 @@
   .portfolio-grid {
     flex-direction: column;
   }
+  #header {
+    margin-bottom: 20px;
+  }
+  section {
+    padding: 30px 10px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
