@@ -31,8 +31,7 @@ p {
 }
 
 .background_header {
-  background-image: url("/public/images/background.bmp");
-  background-size: cover;
+  background-image: url("../../../public/images/background.bmp");
   background-repeat: no-repeat;
   background-position: center;
   /* padding: 3em; */

@@ -37,9 +37,10 @@ p {
   font-weight: 500;
 }
 .background_header {
-  background-image: url("/public/images/background.bmp");
+  background-image: url("../../../public/images/background.bmp");
   background-repeat: no-repeat;
   background-position: center;
+  
   /* padding: 3em; */
 }
 #header {
