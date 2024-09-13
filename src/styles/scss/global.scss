@@ -1,8 +1,10 @@
 // Variables
 $primary-color: #7e3434;
 $secondary-color: #1a1919;
-$secondary-color-opac: #1a191962;
+$secondary-color-opac: rgba(26, 25, 25, 0.384);
 $tercetary-color: #d68910;
+$cuartery-color: darkslategray;
+$cuartery-color-opac: rgba(48, 80, 80, 0.545);
 $text-color: #333;
 $text-color-alternative: #e7e7e7;
 $font-stack: "mestiza-sans", sans-serif;
@@ -16,8 +18,8 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  h1{
-    font-size: 4rem;
+  h1 {
+    font-size: 5rem;
   }
 }
 
@@ -40,21 +42,20 @@ p {
   background-image: url("../../../public/images/background.bmp");
   background-repeat: no-repeat;
   background-position: center;
-  
+
   /* padding: 3em; */
 }
 #header {
   background-color: #fff;
   text-align: center;
-  margin-bottom: 60px;
 
   .front_header {
-    background-color: $secondary-color-opac;
+    background-color: $cuartery-color-opac;
     display: block;
     color: $text-color-alternative;
     padding: 5em 0;
     p {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
     .cta-button {
       background-color: $secondary-color-opac;
@@ -65,7 +66,7 @@ p {
       border-radius: 5px;
       transition: background-color 0.3s ease;
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: darken($cuartery-color, 10%);
       }
       a {
         text-decoration: none;
@@ -77,15 +78,15 @@ p {
 
 nav {
   width: 100%;
-  background-color: #333;
+  background-color: #fff;
   text-align: center;
   padding: 10px 0;
 
   .navbar-toggler {
     border: none;
-    color: #fff;
+    color: $text-color;
     .navbar-toggler-icon {
-      color: #fff;
+      color: $text-color;
     }
   }
   .navbar-nav {
@@ -97,7 +98,7 @@ nav {
         .dropdown-item {
           padding: 10px 15px;
           &:hover {
-            background-color: $primary-color;
+            background-color: $cuartery-color;
             color: #fff;
           }
         }
@@ -108,19 +109,46 @@ nav {
     }
   }
 }
-
+a{
+  color: $text-color;
+}
 section {
   padding: 60px 20px;
 
   h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: $tercetary-color;
+    /* color: $cuartery-color; */
+    color: #fff;
+    font-size: 4em;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  #desarrolloweb {
+    background-color: #fff;
+  }
+  #gestion {
+    background: rgb(184, 131, 170);
+    background: -moz-linear-gradient(
+      172deg,
+      rgba(184, 131, 170, 1) 44%,
+      rgba(113, 75, 103, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      172deg,
+      rgba(184, 131, 170, 1) 44%,
+      rgba(113, 75, 103, 1) 100%
+    );
+    background: linear-gradient(
+      172deg,
+      rgba(184, 131, 170, 1) 44%,
+      rgba(113, 75, 103, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa",endColorstr="#714b67",GradientType=1);
   }
 
   .service-grid,
@@ -169,7 +197,7 @@ section {
         &:hover {
           /* text-decoration: underline; */
           color: $tercetary-color;
-          background-color: $secondary-color;
+          background-color: $cuartery-color;
           transition: 0.4s all;
         }
         i {
@@ -184,7 +212,7 @@ section {
   padding-top: 5em;
   padding-bottom: 5em;
   h2 {
-    color: $tercetary-color;
+    color: $cuartery-color;
     font-family: "mestiza-sans", sans-serif;
   }
   h3 {
@@ -199,6 +227,30 @@ section {
   }
 }
 #servicios {
+  background-color: $cuartery-color;
+  .front {
+    .row {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+
+      .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .odoologo {
+        width: 200px; /* Ajusta según tu diseño */
+      }
+    }
+  }
   h2 {
     font-size: "mestiza-sans", sans-serif;
   }
@@ -237,7 +289,7 @@ section {
   background-color: #333333;
   color: #3b3b3b;
   padding: 50px;
- 
+
   .contact-section {
     padding: 0;
     .footer-brand {
@@ -263,7 +315,7 @@ section {
       }
     }
     span {
-      font-size: 30px
+      font-size: 30px;
     }
     p {
       margin: 0;
