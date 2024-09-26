@@ -3,7 +3,7 @@ $primary-color: #7e3434;
 $secondary-color: #1a1919;
 $secondary-color-opac: rgba(26, 25, 25, 0.384);
 $tercetary-color: #d68910;
-$cuartery-color: darkslategray;
+$cuartery-color: #1B7484;
 $cuartery-color-opac: rgba(48, 80, 80, 0.545);
 $text-color: #333;
 $text-color-alternative: #e7e7e7;
@@ -66,7 +66,7 @@ p {
       border-radius: 5px;
       transition: background-color 0.3s ease;
       &:hover {
-        background-color: darken($cuartery-color, 10%);
+        background-color: $cuartery-color-opac;
       }
       a {
         text-decoration: none;
@@ -99,6 +99,7 @@ nav {
         padding: 0;
         .dropdown-item {
           padding: 10px 15px;
+          color: #1B7484;
           &:hover {
             background-color: $cuartery-color;
             color: #fff;
@@ -107,7 +108,7 @@ nav {
       }
       .nav-link {
         font-size: 1rem;
-        color: rgb(182, 182, 182);
+        color: #fff;
         &:hover{
           color: #fff;
           transition: .3s all ease-in-out;
