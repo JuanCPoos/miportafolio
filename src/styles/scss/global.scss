@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+
   h1 {
     font-size: 4.2rem;
   }
@@ -29,6 +30,7 @@ h2,
 h4 {
   font-family: "mestiza-sans", sans-serif;
 }
+
 /* estilo lead de bootstrap */
 p {
   font-size: 2rem;
@@ -38,6 +40,7 @@ p {
 .bold {
   font-weight: 500;
 }
+
 .background_header {
   background-image: url("../../../public/images/background.bmp");
   background-repeat: no-repeat;
@@ -45,6 +48,7 @@ p {
 
   /* padding: 3em; */
 }
+
 #header {
   background-color: #fff;
   text-align: center;
@@ -54,9 +58,11 @@ p {
     display: block;
     color: $text-color-alternative;
     padding: 5em 0;
+
     p {
       font-size: 1.4rem;
     }
+
     .cta-button {
       background-color: $secondary-color-opac;
       margin-top: 1em;
@@ -65,9 +71,11 @@ p {
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+
       &:hover {
         background-color: $cuartery-color-opac;
       }
+
       a {
         text-decoration: none;
         color: #fff;
@@ -78,57 +86,67 @@ p {
 
 nav {
   width: 100%;
-  background-color: $cuartery-color; 
+  background-color: $cuartery-color;
   text-align: center;
-  .navbar{
+
+  .navbar {
     padding: 0;
     margin: 0;
   }
+
   .navbar-toggler {
     border: none;
     color: $text-color;
+
     .navbar-toggler-icon {
       color: $text-color;
     }
   }
+
   .navbar-nav {
     .nav-item {
       margin: 0 10px;
 
       .dropdown-menu {
         padding: 0;
+
         .dropdown-item {
           padding: 10px 15px;
           color: #1B7484;
+
           &:hover {
             background-color: $cuartery-color;
             color: #fff;
           }
         }
       }
+
       .nav-link {
         font-size: 1rem;
         color: #fff;
-        &:hover{
+
+        &:hover {
           color: #fff;
           transition: .3s all ease-in-out;
           font-weight: 600;
         }
       }
     }
-    
+
   }
 }
-a{
+
+a {
   color: $text-color;
 }
+
 section {
   padding: 60px 20px;
 
   h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: $cuartery-color;    
+    color: $cuartery-color;
     font-size: 4em;
   }
 
@@ -140,29 +158,24 @@ section {
   #desarrolloweb {
     background-color: #fff;
   }
-  #gestion {
+
+  #gestion,
+  .gestion {
     background: rgb(184, 131, 170);
-    background: -moz-linear-gradient(
-      172deg,
-      rgba(184, 131, 170, 1) 44%,
-      rgba(113, 75, 103, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      172deg,
-      rgba(184, 131, 170, 1) 44%,
-      rgba(113, 75, 103, 1) 100%
-    );
-    background: linear-gradient(
-      172deg,
-      rgba(184, 131, 170, 1) 44%,
-      rgba(113, 75, 103, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa",endColorstr="#714b67",GradientType=1);
+    background: -moz-linear-gradient(172deg,
+        rgba(184, 131, 170, 1) 44%,
+        rgba(113, 75, 103, 1) 100%);
+    background: -webkit-linear-gradient(172deg,
+        rgba(184, 131, 170, 1) 44%,
+        rgba(113, 75, 103, 1) 100%);
+    background: linear-gradient(172deg,
+        rgba(184, 131, 170, 1) 44%,
+        rgba(113, 75, 103, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa", endColorstr="#714b67", GradientType=1);
   }
 
   .service-grid,
-  .portfolio-grid,
-  .the-planes {
+  .portfolio-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -189,6 +202,7 @@ section {
         font-family: "mestiza-sans";
         font-size: 1.5rem;
       }
+
       p {
         font-size: 1.05rem;
       }
@@ -210,24 +224,30 @@ section {
           background-color: $cuartery-color;
           transition: 0.4s all;
         }
+
         i {
           font-size: 19px;
         }
       }
     }
+
   }
 }
+
 #portafolio {
   background-color: #f5f5f5;
   padding-top: 5em;
   padding-bottom: 5em;
+
   h2 {
     color: $cuartery-color;
     font-family: "mestiza-sans", sans-serif;
   }
+
   h3 {
     margin: 1em 0;
   }
+
   img {
     width: 250px;
   }
@@ -236,9 +256,11 @@ section {
     display: inline-block;
   }
 }
+
 #servicios {
-  
+
   background-color: #fff;
+
   .front {
     .row {
       display: flex;
@@ -253,22 +275,28 @@ section {
         margin: 0;
         padding: 0;
       }
+
       h3 {
         margin: 0;
         padding: 0;
       }
+
       .odoologo {
-        width: 200px; /* Ajusta según tu diseño */
+        width: 200px;
+        /* Ajusta según tu diseño */
       }
     }
   }
+
   h2 {
     font-size: "mestiza-sans", sans-serif;
   }
+
   img {
     width: 100px;
   }
 }
+
 #contacto {
   .contenedor_contacto {
     background-color: $secondary-color-opac;
@@ -277,21 +305,55 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     form {
       .grupo_input {
         display: inline;
         padding: 1em;
+
         input {
           width: 100%;
         }
       }
+
       textarea {
         width: 100%;
       }
+
       justify-content: center;
     }
   }
 }
+
+#planes {
+
+  .btn-outline {
+    font-size: 1rem;
+    padding: .5em 2.3em;
+    border: 1px $cuartery-color solid;
+    color: $cuartery-color;
+    &:hover {
+      background-color: $cuartery-color;
+      color: white;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .btn-solid {
+    font-size: 1rem;
+    padding: .5em 2.3em;
+    background-color: $cuartery-color;
+    color: white;
+    &:hover{
+      transition: all .4s ease-in-out;
+      background-color: transparent;
+      border: 1px solid $cuartery-color;  
+      color: $cuartery-color;
+    }
+  }
+
+}
+
 /* footer */
 #footer {
   display: flex;
@@ -303,9 +365,11 @@ section {
 
   .contact-section {
     padding: 0;
+
     .footer-brand {
       margin: 1em 0;
     }
+
     a,
     p,
     h4 {
@@ -313,6 +377,7 @@ section {
       text-decoration: none;
     }
   }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -321,19 +386,23 @@ section {
     .footer-brand {
       font-size: 1.5rem;
       font-weight: 700;
+
       a {
         color: #fff;
       }
     }
+
     span {
       font-size: 30px;
     }
+
     p {
       margin: 0;
       font-size: 1rem;
     }
   }
 }
+
 footer {
   margin-top: auto;
   background-color: $secondary-color;
@@ -347,27 +416,38 @@ footer {
   color: #fff;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between; /* Coloca los elementos en los extremos */
-  align-items: center; /* Centra verticalmente */
+  justify-content: space-between;
+  /* Coloca los elementos en los extremos */
+  align-items: center;
+
+  /* Centra verticalmente */
   p {
     font-size: 1em;
   }
+
   .autor {
     margin: 0;
     padding: 0;
+
     a {
       color: #cf9416;
-      text-decoration: none; /* Quita el subrayado del enlace */
+      text-decoration: none;
+      /* Quita el subrayado del enlace */
     }
 
     .custom-icon {
-      display: inline-block; /* Asegura que se comporte como un elemento en línea */
-      width: 24px; /* Ajusta el tamaño según sea necesario */
-      height: 24px; /* Ajusta el tamaño según sea necesario */
-      background-image: url("../../../public/images/llama-origami.png"); /* Ruta a tu imagen PNG */
+      display: inline-block;
+      /* Asegura que se comporte como un elemento en línea */
+      width: 24px;
+      /* Ajusta el tamaño según sea necesario */
+      height: 24px;
+      /* Ajusta el tamaño según sea necesario */
+      background-image: url("../../../public/images/llama-origami.png");
+      /* Ruta a tu imagen PNG */
       background-size: cover;
       background-repeat: no-repeat;
-      vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
+      vertical-align: middle;
+      /* Ajusta la alineación vertical si es necesario */
     }
   }
 }

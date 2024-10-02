@@ -127,16 +127,16 @@ section .container {
 section #desarrolloweb {
   background-color: #fff;
 }
-section #gestion {
+section #gestion,
+section .gestion {
   background: rgb(184, 131, 170);
   background: -moz-linear-gradient(172deg, rgb(184, 131, 170) 44%, rgb(113, 75, 103) 100%);
   background: -webkit-linear-gradient(172deg, rgb(184, 131, 170) 44%, rgb(113, 75, 103) 100%);
   background: linear-gradient(172deg, rgb(184, 131, 170) 44%, rgb(113, 75, 103) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa",endColorstr="#714b67",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa", endColorstr="#714b67", GradientType=1);
 }
 section .service-grid,
-section .portfolio-grid,
-section .the-planes {
+section .portfolio-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -144,9 +144,7 @@ section .the-planes {
 section .service-grid .service,
 section .service-grid .project,
 section .portfolio-grid .service,
-section .portfolio-grid .project,
-section .the-planes .service,
-section .the-planes .project {
+section .portfolio-grid .project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,35 +159,27 @@ section .the-planes .project {
 section .service-grid .service .img_project,
 section .service-grid .project .img_project,
 section .portfolio-grid .service .img_project,
-section .portfolio-grid .project .img_project,
-section .the-planes .service .img_project,
-section .the-planes .project .img_project {
+section .portfolio-grid .project .img_project {
   max-width: 90%;
   margin-bottom: 15px;
 }
 section .service-grid .service h3,
 section .service-grid .project h3,
 section .portfolio-grid .service h3,
-section .portfolio-grid .project h3,
-section .the-planes .service h3,
-section .the-planes .project h3 {
+section .portfolio-grid .project h3 {
   font-family: "mestiza-sans";
   font-size: 1.5rem;
 }
 section .service-grid .service p,
 section .service-grid .project p,
 section .portfolio-grid .service p,
-section .portfolio-grid .project p,
-section .the-planes .service p,
-section .the-planes .project p {
+section .portfolio-grid .project p {
   font-size: 1.05rem;
 }
 section .service-grid .service .project-link,
 section .service-grid .project .project-link,
 section .portfolio-grid .service .project-link,
-section .portfolio-grid .project .project-link,
-section .the-planes .service .project-link,
-section .the-planes .project .project-link {
+section .portfolio-grid .project .project-link {
   display: inline-block;
   margin-top: 10px;
   color: #333;
@@ -203,9 +193,7 @@ section .the-planes .project .project-link {
 section .service-grid .service .project-link:hover,
 section .service-grid .project .project-link:hover,
 section .portfolio-grid .service .project-link:hover,
-section .portfolio-grid .project .project-link:hover,
-section .the-planes .service .project-link:hover,
-section .the-planes .project .project-link:hover {
+section .portfolio-grid .project .project-link:hover {
   /* text-decoration: underline; */
   color: #d68910;
   background-color: #1B7484;
@@ -214,9 +202,7 @@ section .the-planes .project .project-link:hover {
 section .service-grid .service .project-link i,
 section .service-grid .project .project-link i,
 section .portfolio-grid .service .project-link i,
-section .portfolio-grid .project .project-link i,
-section .the-planes .service .project-link i,
-section .the-planes .project .project-link i {
+section .portfolio-grid .project .project-link i {
   font-size: 19px;
 }
 
@@ -260,7 +246,8 @@ section .the-planes .project .project-link i {
   padding: 0;
 }
 #servicios .front .row .odoologo {
-  width: 200px; /* Ajusta según tu diseño */
+  width: 200px;
+  /* Ajusta según tu diseño */
 }
 #servicios h2 {
   font-size: "mestiza-sans", sans-serif;
@@ -289,6 +276,30 @@ section .the-planes .project .project-link i {
 }
 #contacto .contenedor_contacto form textarea {
   width: 100%;
+}
+
+#planes .btn-outline {
+  font-size: 1rem;
+  padding: 0.5em 2.3em;
+  border: 1px #1B7484 solid;
+  color: #1B7484;
+}
+#planes .btn-outline:hover {
+  background-color: #1B7484;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+#planes .btn-solid {
+  font-size: 1rem;
+  padding: 0.5em 2.3em;
+  background-color: #1B7484;
+  color: white;
+}
+#planes .btn-solid:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #1B7484;
+  color: #1B7484;
 }
 
 /* footer */
@@ -345,8 +356,10 @@ footer {
   color: #fff;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between; /* Coloca los elementos en los extremos */
-  align-items: center; /* Centra verticalmente */
+  justify-content: space-between;
+  /* Coloca los elementos en los extremos */
+  align-items: center;
+  /* Centra verticalmente */
 }
 .footer-bottom p {
   font-size: 1em;
@@ -357,16 +370,22 @@ footer {
 }
 .footer-bottom .autor a {
   color: #cf9416;
-  text-decoration: none; /* Quita el subrayado del enlace */
+  text-decoration: none;
+  /* Quita el subrayado del enlace */
 }
 .footer-bottom .autor .custom-icon {
-  display: inline-block; /* Asegura que se comporte como un elemento en línea */
-  width: 24px; /* Ajusta el tamaño según sea necesario */
-  height: 24px; /* Ajusta el tamaño según sea necesario */
-  background-image: url("../../../public/images/llama-origami.png"); /* Ruta a tu imagen PNG */
+  display: inline-block;
+  /* Asegura que se comporte como un elemento en línea */
+  width: 24px;
+  /* Ajusta el tamaño según sea necesario */
+  height: 24px;
+  /* Ajusta el tamaño según sea necesario */
+  background-image: url("../../../public/images/llama-origami.png");
+  /* Ruta a tu imagen PNG */
   background-size: cover;
   background-repeat: no-repeat;
-  vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
+  vertical-align: middle;
+  /* Ajusta la alineación vertical si es necesario */
 }
 
 /*# sourceMappingURL=global.css.map */
