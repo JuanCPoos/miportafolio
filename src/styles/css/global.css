@@ -135,7 +135,8 @@ section #gestion {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b883aa",endColorstr="#714b67",GradientType=1);
 }
 section .service-grid,
-section .portfolio-grid {
+section .portfolio-grid,
+section .the-planes {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -143,7 +144,9 @@ section .portfolio-grid {
 section .service-grid .service,
 section .service-grid .project,
 section .portfolio-grid .service,
-section .portfolio-grid .project {
+section .portfolio-grid .project,
+section .the-planes .service,
+section .the-planes .project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,27 +161,35 @@ section .portfolio-grid .project {
 section .service-grid .service .img_project,
 section .service-grid .project .img_project,
 section .portfolio-grid .service .img_project,
-section .portfolio-grid .project .img_project {
+section .portfolio-grid .project .img_project,
+section .the-planes .service .img_project,
+section .the-planes .project .img_project {
   max-width: 90%;
   margin-bottom: 15px;
 }
 section .service-grid .service h3,
 section .service-grid .project h3,
 section .portfolio-grid .service h3,
-section .portfolio-grid .project h3 {
+section .portfolio-grid .project h3,
+section .the-planes .service h3,
+section .the-planes .project h3 {
   font-family: "mestiza-sans";
   font-size: 1.5rem;
 }
 section .service-grid .service p,
 section .service-grid .project p,
 section .portfolio-grid .service p,
-section .portfolio-grid .project p {
+section .portfolio-grid .project p,
+section .the-planes .service p,
+section .the-planes .project p {
   font-size: 1.05rem;
 }
 section .service-grid .service .project-link,
 section .service-grid .project .project-link,
 section .portfolio-grid .service .project-link,
-section .portfolio-grid .project .project-link {
+section .portfolio-grid .project .project-link,
+section .the-planes .service .project-link,
+section .the-planes .project .project-link {
   display: inline-block;
   margin-top: 10px;
   color: #333;
@@ -192,7 +203,9 @@ section .portfolio-grid .project .project-link {
 section .service-grid .service .project-link:hover,
 section .service-grid .project .project-link:hover,
 section .portfolio-grid .service .project-link:hover,
-section .portfolio-grid .project .project-link:hover {
+section .portfolio-grid .project .project-link:hover,
+section .the-planes .service .project-link:hover,
+section .the-planes .project .project-link:hover {
   /* text-decoration: underline; */
   color: #d68910;
   background-color: #1B7484;
@@ -201,7 +214,9 @@ section .portfolio-grid .project .project-link:hover {
 section .service-grid .service .project-link i,
 section .service-grid .project .project-link i,
 section .portfolio-grid .service .project-link i,
-section .portfolio-grid .project .project-link i {
+section .portfolio-grid .project .project-link i,
+section .the-planes .service .project-link i,
+section .the-planes .project .project-link i {
   font-size: 19px;
 }
 
