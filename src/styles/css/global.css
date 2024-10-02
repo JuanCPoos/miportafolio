@@ -47,6 +47,10 @@ p {
   color: #e7e7e7;
   padding: 5em 0;
 }
+#header .front_header a {
+  color: #fff;
+  text-decoration: none;
+}
 #header .front_header p {
   font-size: 1.4rem;
 }
